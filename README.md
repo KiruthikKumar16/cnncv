@@ -65,24 +65,6 @@ python scripts/realtime_age_gender.py --cam-width 1280 --cam-height 720
 python scripts/realtime_age_gender.py --cam-index 1
 ```
 
-## GitHub
-Ignore large artifacts before pushing:
-```bash
-echo models/>>.gitignore
-echo .venv/>>.gitignore
-echo __pycache__/>>.gitignore
-echo *.pyc>>.gitignore
-```
-Initialize and push:
-```bash
-git init
-git add .
-git commit -m "feat: realtime age & gender detection with smoothing"
-git branch -M main
-git remote add origin https://github.com/KiruthikKumar16/cnncv.git
-git push -u origin main
-```
-
 ### Troubleshooting alignment
 If labels overlap your hair/edge of frame, the app now packs labels above the box when there is room; otherwise inside or below the box to avoid clashing.
 
